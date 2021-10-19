@@ -1,0 +1,10 @@
+package defaul_packge;
+
+public class NumeroPrimo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

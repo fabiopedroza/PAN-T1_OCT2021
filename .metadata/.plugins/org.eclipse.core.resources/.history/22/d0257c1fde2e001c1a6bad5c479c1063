@@ -1,0 +1,28 @@
+package RefrigeradoresEncapsula;
+
+public  class ArCondicionado extends Refrigeradores {
+
+	@Override
+	public void ligar() {
+		System.out.println("O mamífero movimenta-se andando!"); 
+		
+	}
+
+	@Override
+	public void desligar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void aumentar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+
+	
+
+}

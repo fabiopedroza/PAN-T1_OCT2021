@@ -1,0 +1,9 @@
+package ProfessoresEncapsula;
+
+public abstract class Professores {
+	
+	public void aula() {
+		
+	}
+
+}

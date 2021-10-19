@@ -1,0 +1,9 @@
+package RefrigeradoresEncapsula;
+
+public abstract class Professores {
+	
+	public abstract void ligar();
+	public abstract void desligar();
+	public abstract void aumentar();
+
+}

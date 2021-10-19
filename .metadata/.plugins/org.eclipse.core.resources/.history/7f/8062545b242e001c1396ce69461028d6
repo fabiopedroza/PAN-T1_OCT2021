@@ -1,0 +1,23 @@
+package defaul_packge;
+
+import java.util.Scanner;
+
+public class NumeroPrimo {
+
+	public static void main(String[] args) {
+
+	
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Digite numero (identicar nro. primo): ");
+		int numeroPrimo = entrada.nextInt();
+	
+		    
+				
+	for( int i = 2; i <= numeroPrimo; ++i){
+			System.out.println( i );
+	
+		}
+
+
+	}
+}

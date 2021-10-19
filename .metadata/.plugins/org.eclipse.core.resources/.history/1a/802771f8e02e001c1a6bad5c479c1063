@@ -1,0 +1,23 @@
+package RefrigeradoresEncapsula;
+
+public class Ventilador extends Refrigeradores {
+
+	@Override
+	public void ligar() {
+		System.out.println("Ventilador começa a rodar as hélices!");
+		
+	}
+
+	@Override
+	public void desligar() {
+		System.out.println("Para o funcionamento das hélices!");
+		
+	}
+
+	@Override
+	public void aumentar() {
+		System.out.println("Aumenta a velocidade das hélices!");
+		
+	}
+
+}

@@ -1,0 +1,43 @@
+package defaul_packge;
+
+import java.util.Scanner;
+
+public class NumeroPrimoWhile {
+	
+	public static void main(String[] args) {
+
+
+		Scanner entrada = new Scanner(System.in);
+//		System.out.println("Digite numero primo: ");
+		int numeroPrimo; // = entrada.nextInt();
+		int contador; //  = 0;
+
+		while(true) {
+			
+			System.out.println("Digite numero primo (-1 sair): ");
+			numeroPrimo = entrada.nextInt();
+			contador  = 0;
+			
+			if(numeroPrimo == -1) {
+				break;
+			}
+			else {
+		for( int i = 2; i <= numeroPrimo; ++i){
+			if ((numeroPrimo % i == 0) ) {
+				contador ++;
+			}
+			
+		}
+		if(contador > 2) {
+			System.out.println("Desculpe, mas o número " + String.valueOf(numeroPrimo) + " digitado não é primo.");
+		}
+		else {
+			System.out.println("O número " + String.valueOf(numeroPrimo) + " realmente é primo." +"\n");
+		}
+
+	
+	}
+		}		
+	}
+	
+}

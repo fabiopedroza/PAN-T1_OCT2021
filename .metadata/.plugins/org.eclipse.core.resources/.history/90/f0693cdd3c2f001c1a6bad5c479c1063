@@ -1,0 +1,59 @@
+package LacosForWhile;
+
+import java.util.Scanner;
+
+/*
+A prefeitura de uma cidade fez uma pesquisa entre 20 de seus habitantes, coletando dados sobre o 
+	salário e número de filhos. A prefeitura deseja saber:  
+a) média do salário da população;
+b) média do número de filhos;
+c) maior salário;
+d) percentual de pessoas com salário até R$100,00.
+*/
+
+public class PesquisaPopulacao {
+
+	public static void main(String[] args) {
+
+		Scanner pesquisa 	= new Scanner(System.in);
+		int nroPesquisado 	= ;
+		double mediaSalario = 0.0;
+		double mediaFilhos 	= 0.0;
+		double maiorSalario = 0.0;
+		int mmenor100 = 0;
+		
+		double totalSalario = 0.0;
+		double totalFilhos 	= 0.0;
+		double salarioAtual = 0.0;
+		int numeroFilhos	= 0;
+		
+		for (int i = 0; i < nroPesquisado; i++) {
+			
+			System.out.println("Salário do pesquisado? ");
+			salarioAtual = pesquisa.nextDouble();
+			totalSalario += salarioAtual;
+			
+			if (maiorSalario < salarioAtual) {
+				maiorSalario = salarioAtual;
+				mmenor100 += 1;				
+			}
+			
+			if (salarioAtual < 100) {
+				mmenor100 += 1;
+			}
+			
+			System.out.println("Quantidade de filhos do pesquisado: ");
+			numeroFilhos = pesquisa.nextInt();
+			totalFilhos += numeroFilhos;	
+			
+		}
+		
+		//System.out.println("Média do salário da população: R$ %.2f\n " + totalSalario / nroPesquisado);
+		System.out.println("Média do salário da população é R$ " + totalSalario / nroPesquisado);
+		System.out.println("Média de filhos: " + totalFilhos / nroPesquisado);
+		System.out.println("Maior salário entre os pesquisados foi de R$ " + maiorSalario);
+		System.out.println("Percentual com salário até R$ 100,00 foi de " + (mmenor100 / nroPesquisado)/100 );
+
+	}
+
+}

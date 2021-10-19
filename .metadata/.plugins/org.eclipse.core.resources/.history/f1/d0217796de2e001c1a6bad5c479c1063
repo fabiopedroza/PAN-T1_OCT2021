@@ -1,0 +1,22 @@
+package RefrigeradoresEncapsula;
+
+public class ArCondicionado extends Refrigeradores{
+
+	public void ligar() {
+		System.out.println("Ar condicionado começa a resfriar o ambiente!");
+		
+	}
+
+	@Override
+	public void desligar() {
+		System.out.println("Para o funcionamento do ar condicionado e o ambiente retorna a tempertura normal!");
+		
+	}
+
+	@Override
+	public void aumentar() {
+		System.out.println("Diminiu a  temperatura do ambiente!");
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package RefrigeradoresEncapsula;
+
+public abstract class Professores {
+	
+	public void aula() {
+		
+	}
+
+}
