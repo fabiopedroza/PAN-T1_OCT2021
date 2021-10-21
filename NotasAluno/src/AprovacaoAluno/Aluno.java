@@ -30,6 +30,19 @@ public class Aluno {
 		
 	}
 
+	private void maiorNota() {
+		double maiorNota = 0;
+		for(double i : this.getNotas()) {
+			if(i > maiorNota) {
+				maiorNota = i;
+			}
+		
+		}
+		
+		System.out.println("Maior nota é : " + maiorNota);
+		
+	}
+
 	private void media() {
 		double somaNotas = 0, media = 0;
 		for (double i : this.getNotas() ) {
@@ -46,8 +59,13 @@ public class Aluno {
 		}
 	}
 
+	private void reprovado() {
+		System.out.println("Reprovado!");
+		
+	}
+
 	private void aprovado() {
-		System.out.println("");
+		System.out.println(this.getNome() + " Aprovado!");
 		
 	}
 	
